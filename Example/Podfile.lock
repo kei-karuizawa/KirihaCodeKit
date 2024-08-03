@@ -1,0 +1,25 @@
+PODS:
+  - KirihaCodeKit (0.0.1):
+    - KirihaCodeKit/KCKCore (= 0.0.1)
+  - KirihaCodeKit/KCKCore (0.0.1)
+  - SnapKit (5.6.0)
+
+DEPENDENCIES:
+  - KirihaCodeKit (from `../`)
+  - SnapKit
+
+SPEC REPOS:
+  trunk:
+    - SnapKit
+
+EXTERNAL SOURCES:
+  KirihaCodeKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  KirihaCodeKit: 1ce839f194fe861d60d11bef26cafaafbd31cec2
+  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
+
+PODFILE CHECKSUM: c1119ea33ded96498a6ed9560fc3d2f406f9d981
+
+COCOAPODS: 1.15.2

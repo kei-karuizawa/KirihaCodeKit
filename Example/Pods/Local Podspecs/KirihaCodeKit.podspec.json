@@ -1,0 +1,160 @@
+{
+  "name": "KirihaCodeKit",
+  "version": "0.0.1",
+  "summary": "A short description of KirihaCodeKit.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://gitlab.com/kiriha/kiriha-code-kit.git",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "月见坂桐叶": "git_kiriha@163.com"
+  },
+  "source": {
+    "git": "https://gitlab.com/kiriha/kiriha-code-kit.git",
+    "tag": "0.0.1"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "swift_versions": "5.0",
+  "prefix_header_contents": "#import <Kiriha/kiriha-Swift.h>",
+  "default_subspecs": "KCKCore",
+  "static_framework": true,
+  "subspecs": [
+    {
+      "name": "KCKCore",
+      "source_files": "KirihaCodeKit/Classes/KCKCore/**/*",
+      "frameworks": "Foundation"
+    },
+    {
+      "name": "KCKFoundation",
+      "source_files": "KirihaCodeKit/Classes/KCKFoundation/**/*",
+      "frameworks": "Foundation"
+    },
+    {
+      "name": "KCKCommon",
+      "source_files": "KirihaCodeKit/Classes/KCKCommon/**/*",
+      "frameworks": "Foundation",
+      "dependencies": {
+        "KirihaCodeKit/KCKFoundation": [
+
+        ]
+      }
+    },
+    {
+      "name": "KCKUIKit",
+      "source_files": "KirihaCodeKit/Classes/KCKUIKit/**/*",
+      "frameworks": [
+        "Foundation",
+        "UIKit"
+      ],
+      "dependencies": {
+        "KirihaCodeKit/KCKFoundation": [
+
+        ],
+        "KirihaCodeKit/KCKCommon": [
+
+        ],
+        "SDWebImage": [
+
+        ],
+        "SnapKit": [
+
+        ]
+      }
+    },
+    {
+      "name": "KCKView",
+      "source_files": "KirihaCodeKit/Classes/KCKView/*",
+      "frameworks": [
+        "Foundation",
+        "UIKit"
+      ],
+      "dependencies": {
+        "KirihaCodeKit/KCKFoundation": [
+
+        ],
+        "KirihaCodeKit/KCKCommon": [
+
+        ],
+        "KirihaCodeKit/KCKUIKit": [
+
+        ],
+        "SDWebImage": [
+
+        ],
+        "SnapKit": [
+
+        ]
+      }
+    },
+    {
+      "name": "KCKContentSheet",
+      "source_files": "KirihaCodeKit/Classes/KCKContentSheet/*",
+      "frameworks": [
+        "Foundation",
+        "UIKit"
+      ],
+      "dependencies": {
+        "KirihaCodeKit/KCKFoundation": [
+
+        ],
+        "KirihaCodeKit/KCKCommon": [
+
+        ],
+        "KirihaCodeKit/KCKUIKit": [
+
+        ],
+        "SnapKit": [
+
+        ]
+      }
+    },
+    {
+      "name": "KCKAlertView",
+      "source_files": "KirihaCodeKit/Classes/KCKAlertView/*",
+      "frameworks": [
+        "Foundation",
+        "UIKit"
+      ],
+      "dependencies": {
+        "KirihaCodeKit/KCKFoundation": [
+
+        ],
+        "KirihaCodeKit/KCKCommon": [
+
+        ],
+        "KirihaCodeKit/KCKUIKit": [
+
+        ],
+        "SnapKit": [
+
+        ]
+      }
+    },
+    {
+      "name": "KCKCalendarView",
+      "source_files": "KirihaCodeKit/Classes/KCKCalendarView/*",
+      "frameworks": [
+        "Foundation",
+        "UIKit"
+      ],
+      "dependencies": {
+        "KirihaCodeKit/KCKFoundation": [
+
+        ]
+      }
+    },
+    {
+      "name": "Resources",
+      "resource_bundles": {
+        "KirihaCodeKit": [
+          "KirihaCodeKit/Assets/*.xcassets"
+        ]
+      }
+    }
+  ],
+  "swift_version": "5.0"
+}

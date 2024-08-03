@@ -1,0 +1,6 @@
+framework module KirihaCodeKit {
+  umbrella header "KirihaCodeKit-umbrella.h"
+
+  export *
+  module * { export * }
+}
